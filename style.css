@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: co;
+    border-radius: 20px;
+   overflow: hidden;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+
+}
+
+.product-header {
+    margin-top: 10px;
+    margin-bottom: -15px;
+    color: #6C7289;
+}
+
+.product-name {
+    font-family: 'Fraunces';
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.product-detail {
+    font-family: 'Montserrat';
+    color: #6C7289;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.product-price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.price-discount {
+    font-family: 'Fraunces';
+    font-size: 40px;
+    color: #3D8168;
+}
+
+.price-original {
+    font-family: "Montserrat";
+    color: #6C7289;
+    margin-left: 15px;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0px;
+    color: white;
+    font-family: 'Fraunces';
+    background-color: #3D8168;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 236px;
+    height: 48px;
+}
+
+.product-image2 {
+    display: none;
+}
+
+.product-image2
+
+button:hover {
+    background-color: #144e39;
+
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 343px;
+        height: 630px;
+        background-color: white;
+    }
+    .product-header {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
+    .product-name {
+        margin-bottom: 10px;
+    }
+    
+    .product-price {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .product-image1 {
+        display: none;
+    }
+   
+    .product-image2 {
+        display: initial;
+        
+    }       
+}
